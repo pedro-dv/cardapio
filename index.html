@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +35,8 @@
         Conheça nosso menu
     </h2>
     
-    
-    <div class="main flex-1 overflow-auto pb-16">
+        <!--Menu -->
+    <div id="menu" class="main flex-1 overflow-auto pb-16">
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-20 flex-1 ">
             <!--Item produto -->
             <div class="flex gap-2">
@@ -166,29 +167,27 @@
         </div>
         <!--Fim Bebidas -->
 
-    </div> <!--Fim main -->
+    </div> <!--Fim Menu -->
 
 
-   
 
-
-    <!--cart footer -->
-    <footer class="w-full bg-red-500 py-3 fixed bottom-0 left-0 z-60 flex justify-center items-center">
-        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-            (<span id="cart-count">0</span>) Veja meu carrinho
-            <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-    </footer>
-    <!--Fim cart footer -->
+         <!--cart footer -->
+         <footer class="w-full bg-red-500 py-3 fixed bottom-0 left-0 z-60 flex justify-center items-center">
+            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+                (<span id="cart-count">0</span>) Veja meu carrinho
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </footer>
+        <!--Fim cart footer -->
 
 
 
      <!--Modal cart -->
-     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+     <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
 
-            <div id="cart-items" class="flex justify-between mb-2 flex-col"><div>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
             <p class="font-bold">
                 Total: <span id="cart-total">0.00</span>
@@ -199,8 +198,8 @@
             <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
 
             <div class="flex item-center justify-between mt-5 w-full">
-                <button class="close-model-btn">Fechar</button>
-                <button class="bg-blue-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+                <button id="close-model-btn">Voltar</button>
+                <button id="checkout-btn" class="bg-blue-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
             </div>
 
         </div>
@@ -209,8 +208,7 @@
 
 
 
-
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
