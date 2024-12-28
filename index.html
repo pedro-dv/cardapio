@@ -189,8 +189,7 @@
         <!--Fim cart footer -->
 
 
-
-     <!--Modal cart -->
+     <!-- Modal cart 
      <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
@@ -212,7 +211,39 @@
 
         </div>
     </div>
+     Fim Modal -->
+
+
+    <!-- Modal carrinho -->
+    <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">
+                Total: <span id="cart-total">0.00</span>
+            </p>
+
+            <p class="font-medium mt-4">Escolha uma opção de entrega:</p>
+            <select id="delivery-option" class="w-full border-2 p-1 rounded my-1">
+                <option value="pickup">Retirar no estabelecimento</option>
+                <option value="delivery">Entrega em casa</option>
+            </select>
+
+            <p class="font-medium mt-4">Endereço de entrega: </p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address" class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-model-btn">Voltar</button>
+                <button id="checkout-btn" class="bg-blue-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
     <!-- Fim Modal-->
+
+
 
 
 

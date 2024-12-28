@@ -38,9 +38,6 @@ menu.addEventListener("click", (event) => {
     }
 });
 
-
-
-
 function addToCart(name, price) {
     const existingItem = cart.find((item) => item.name === name);
     if (existingItem) {
@@ -56,8 +53,6 @@ function updateCartCounter() {
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartCounter.textContent = totalItems;
 }
-
-
 
 // Atualizar o conteúdo do modal do carrinho
 function updateCartModal() {
@@ -170,7 +165,7 @@ checkoutBtn.addEventListener("click", () => {
 // Verificar horário de funcionamento
 function checkRestaurantOpen() {
     const hour = new Date().getHours();
-    return hour >= 18 && hour < 22;
+    return hour >= 12 && hour < 22;
 }
 
 // Atualizar status de funcionamento
