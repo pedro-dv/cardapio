@@ -2,7 +2,8 @@
 
 Este é um projeto simples de um carrinho de compras online desenvolvido em HTML, CSS e JavaScript. Ele permite adicionar itens ao carrinho, visualizar os produtos selecionados e finalizar o pedido enviando as informações via WhatsApp.
 
-![burgueria](https://github.com/user-attachments/assets/4984a19b-ad4b-4ccd-a0b8-febe02c633a5)
+
+![Screenshot 2025-03-31 at 19-40-17 Cardapio Online](https://github.com/user-attachments/assets/4ac9ac1e-7656-414c-9b75-f24909d872c7)
 
 
 ## Recursos do Projeto
