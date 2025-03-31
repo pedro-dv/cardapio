@@ -2,6 +2,9 @@
 
 Este é um projeto simples de um carrinho de compras online desenvolvido em HTML, CSS e JavaScript. Ele permite adicionar itens ao carrinho, visualizar os produtos selecionados e finalizar o pedido enviando as informações via WhatsApp.
 
+![burgueria](https://github.com/user-attachments/assets/4984a19b-ad4b-4ccd-a0b8-febe02c633a5)
+
+
 ## Recursos do Projeto
 
 - **Adicionar itens ao carrinho**: Os produtos disponíveis no menu podem ser adicionados ao carrinho com um clique.
