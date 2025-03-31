@@ -71,6 +71,9 @@ function removeItemCart(name) {
 
 ### 3. Finalizar Pedido
 
+![Screenshot 2025-03-31 at 19-41-07 Cardapio Online](https://github.com/user-attachments/assets/62db05cb-ce8d-4a1b-8002-57438a7d391c)
+
+
 O resumo do pedido é gerado e enviado para o WhatsApp:
 
 ```javascript
