@@ -1,4 +1,5 @@
 # Projeto de Carrinho de Compras Online
+https://cardapio-pied.vercel.app/
 
 Este é um projeto simples de um carrinho de compras online desenvolvido em HTML, CSS e JavaScript. Ele permite adicionar itens ao carrinho, visualizar os produtos selecionados e finalizar o pedido enviando as informações via WhatsApp.
 
